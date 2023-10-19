@@ -1,0 +1,823 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: hsl(36, 100%, 99%);
+}
+header {
+    width: 100%;
+    height: 100vh;
+}
+nav {
+    display: flex;
+    margin: auto;
+    max-width: 1450px;
+    padding: 5%, 5%;
+}
+nav img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-left: 150px;
+    width: 50px;
+    height: 27px;
+}
+nav ul {
+    text-align: right;
+    flex: 1;
+    margin-right: 150px;
+}
+nav ul li {
+    display: inline-block;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+nav ul img {
+    width: 40px;
+    display: none;
+}
+nav ul li a {
+    color: hsl(236, 13%, 42%);
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: rgb(219, 165, 65);
+}
+.blocks {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    transition: all .4s ease-in-out;
+}
+.blocks .drop {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: block;
+    border: 1px solid hsl(233, 8%, 79%);
+    z-index: 50;
+    width: 250px;
+    height: 100vh;
+    background-color: #fff;
+}
+.blocks .drop nav{
+    display: block;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.blocks .drop img {
+    width: 30px;
+    position: absolute;
+    display: flex;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+.blocks .drop nav ul {
+    display: right;
+    flex: 1;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.blocks .drop nav ul li {
+    text-align: left;
+    display: block;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.blocks .drop nav ul li a {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    color: #000;
+}
+.blocks .drop nav ul li a:hover {
+    color: rgb(219, 165, 65);
+}
+.container {
+    max-width: 1050px;
+    margin: auto;
+    margin-bottom: 150px;
+}
+.container .banner {
+    position: relative;
+}
+.container .banner .new {
+    position: relative;
+    top: 50px;
+    left: 770px;
+    width: 255px;
+    height: 390px;
+    padding-top: 25px;
+    background-color: hsl(240, 100%, 5%);
+    margin-bottom: 150px;
+}
+.container .banner .new h2 {
+    margin-left: 20px;
+    text-align: left;
+    font-size: 28px;
+    color: rgb(199, 157, 80);
+}
+.container .banner .new .hydrogen {
+    font-size: 15px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.container .banner .new .hydrogen h3 {
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.container .banner .new .hydrogen h3:hover {
+    color: rgb(219, 165, 65);
+}
+.container .banner .new .hydrogen p {
+    color: #a8a8a8;
+    font-size: 12px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.container .banner .new hr {
+    width: 220px;
+    margin-left: 15px;
+    border-color: #555;
+}
+.container .template {
+    position: absolute;
+    top: 0px;
+    margin: 0;
+    padding: 0;
+}
+.container .template .future {
+    position: absolute;
+    margin-top: 140px;
+    margin-bottom: 150px;
+}
+.container .template img {
+    width: 750px;
+}
+.container .template #mobile {
+    display: none;
+}
+.container .template h1 {
+    margin-top: 20px;
+    font-size: 50px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    width: 300px;
+}
+.container .template p {
+    position: absolute;
+    margin-left: 400px;
+    top: 350px;
+    color: #555;
+    width: 340px;
+}
+.container .template button {
+    position: relative;
+    bottom: 80px;
+    left: 400px;
+    background-color: #f14f3d;
+    border-color: transparent;
+    color: #fff;
+    font-size: 15px;
+    width: 160px;
+    height: 40px;
+    cursor: pointer;
+}
+.container .template button:hover {
+    background-color:  hsl(240, 100%, 5%);
+}
+.blog {
+    max-width: 1050px;
+    margin: auto;  
+}
+.blog .news {
+    float: left;
+    margin-right: 130px;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+.blog .news img {
+    width: 90px;
+}
+.blog .news h2 {
+    color: hsl(233, 8%, 79%);
+    position: relative;
+    top: 90px;
+    left: 110px;
+    font-size: 25px;
+}
+.blog .news h3 {
+    font-size: 17px;
+    position: relative;
+    top: 95px;
+    left: 110px;
+}
+.blog .news h3:hover {
+    color: #f14f3d;
+}
+.blog .news p {
+    font-size: 15px;
+    position: relative;
+    top: 110px;
+    width: 220px;
+    left: 110px;
+}
+@media screen and (max-width: 1043.33px) {
+
+    .container .template .future img {
+        width: 60%;
+        margin-left: 150px;
+    }
+    .container .template .future h1 {
+        margin-left: 150px;
+        width: 500px;
+        margin-bottom: 30px;
+    }
+    .container .template .future p {
+        margin-top: 0px;
+        padding-top: 0px;
+        top: 330px;
+        margin-left: 150px;
+    }
+    .container .template .future button {
+        top: 80px;
+        left: 150px;
+    }
+
+    .container .banner .new {
+       position: relative;
+       left: 150px;
+       top: 560px;
+    }
+    .blog .news {
+
+      position: relative;
+      top: 400px;
+      margin-left: 150px;
+      float: left;
+    }
+   
+} 
+@media screen and (max-width: 980px) {
+    .container .template .future button {
+        top: 70px;
+    }
+}
+@media screen and (max-width: 930px) {
+    .container .template .future button {
+        top: 70px;
+    }
+    nav ul li a {
+        margin-top: 150px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 880px) {
+    .container .template .future button {
+        top: 70px;
+    }
+    nav ul li a {
+        margin-top: 150px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .container .template .future button {
+        top: 70px;
+    }
+
+}
+@media screen and (max-width: 755.56px) {
+    .container .banner .new {
+        top: 550px;
+    }
+    .blog .news {
+        top: 350px;
+    }   
+}
+@media screen and (max-width: 740px) {
+    
+    nav ul #flex {
+        display: none;
+    }
+    nav ul #burger {
+        display: flex;
+        position: absolute;
+        margin-left: 35px;
+        cursor: pointer;
+    }
+    nav img {
+        position: relative;
+        top: 20px
+    }
+    .blocks .drop nav ul {
+        margin-top: 100px;
+    }
+    .blocks .drop nav ul li {
+       margin-bottom: 20px;
+       margin-top: 0px;
+    }
+    .blocks .drop nav ul li a {
+        font-size: 15px;
+        color: #000;
+        font-weight: 500;
+        padding-bottom: 30px;
+    }
+   
+}
+@media screen and (max-width: 667.78px) {
+    
+    .container .template .future h1 {
+        width: 450px;
+    }
+    .container .template .future button {
+        top: 80px
+    }
+}
+@media screen and (max-width: 616px) {
+
+    nav ul li  {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    nav ul li a {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+ 
+    .container .template .future h1 {
+        width: 400px;
+        margin-bottom: 50px;
+    }
+    .container .template .future p {
+        top: 380px;
+    }
+    .container .banner .new  {
+        position: relative;
+        top: 630px;
+        margin-bottom: 250px;
+       
+    }
+    .blocks .drop nav ul li {
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 566px) {
+    
+ 
+    .container .template .future img {
+        width: 67%;
+    }
+    .container .template .future h1 {
+        width: 350px;
+        margin-bottom: 50px;
+    }
+    .container .template .future p {
+        top: 380px;
+    }
+}
+@media screen and (max-width: 516px) {
+    nav ul li #burger {
+        cursor: pointer;
+        
+    }
+    nav img {
+        position: relative;
+        right: 50px;
+    }
+    .container .template .future img {
+        margin-left: 100px;
+        
+    }
+    .container .template .future h1 {
+        margin-left: 100px;
+    }
+    .container .template .future p {
+        margin-left: 100px;
+    }
+    .container .template .future button {
+        left: 100px;
+    }
+    .container .banner .new {
+        left: 100px;
+    }
+    .blog .news {
+        margin-left: 100px;
+    }
+}
+@media screen and (max-width: 466px) {
+ 
+    nav img {
+        position: relative;
+        right: 90px;
+    }
+    .container .template .future #desktop {
+        display: none;
+    }
+    .container .template .future #mobile {
+        display: flex;
+        margin-left: 60px;
+        width: 300px;
+    }
+    .container .template .future h1 {
+        margin-left: 50px;
+        font-size: 35px;
+        width: 250px;
+    }
+    .container .template .future p {
+        margin-top: 70px;
+        margin-left: 50px;
+    }
+    .container .template .future button {
+        left: 50px;
+    }
+    .container .banner .new{
+        top: 700px;
+        margin-bottom: 350px;
+    }
+    .container .banner .new {
+        left: 50px;
+    }
+    .blog .news {
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 420px) {
+    
+    nav ul #burger {
+        right: 50px;
+    }
+    
+}
+@media screen and (max-width: 406px) {
+ 
+    nav img {
+        position: relative;
+        right: 120px;
+    }
+    .container .template .future #desktop {
+        display: none;
+    }
+    .container .template .future #mobile {
+        display: flex;
+        margin-left: 30px;
+        width: 310px;
+    }
+    .container .template .future h1 {
+        margin-left: 30px;
+        font-size: 35px;
+        width: 250px;
+    }
+    .container .template .future p {
+        margin-top: 70px;
+        margin-left: 30px;
+    }
+    .container .template .future button {
+        left: 30px;
+    }
+    .container .banner .new{
+        top: 700px;
+        margin-bottom: 350px;
+        left: 30px;
+    }
+    .blog .news {
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width: 386px) {
+    
+    nav img {
+        position: relative;
+        right: 120px;
+    }
+    .container .template .future #desktop {
+        display: none;
+    }
+    .container .template .future #mobile {
+        display: flex;
+        margin-left: 30px;
+        width: 280px;
+    }
+    .container .template .future h1 {
+        margin-left: 30px;
+        font-size: 35px;
+        width: 250px;
+    }
+    .container .template .future p {
+        margin-top: 50px;
+        margin-left: 30px;
+        width: 300px;
+    }
+    .container .template .future button {
+        top: 100px;
+        left: 30px;
+    }
+    .container .banner .new{
+        top: 700px;
+        margin-bottom: 350px;
+        left: 30px;
+    }
+    .blog .news {
+        margin-left: 30px;
+    }
+    .blog .news p {
+        width: 200px;
+    }
+}
+@media screen and (max-width: 356px) {
+     
+    .container .template .future #desktop {
+        display: none;
+    }
+    .container .template .future #mobile {
+        display: flex;
+        margin-left: 30px;
+        width: 260px;
+    }
+    .container .template .future h1 {
+        margin-left: 30px;
+        font-size: 35px;
+        width: 250px;
+    }
+    .container .template .future p {
+        margin-top: 30px;
+        margin-left: 30px;
+        width: 250px;
+    }
+    .container .template .future button {
+        top: 120px;
+        left: 30px;
+    }
+    .container .banner .new{
+        top: 700px;
+        margin-bottom: 350px;
+        left: 30px;
+    }
+    .blog .news {
+        margin-left: 30px;
+    }
+    .blog .news p {
+        width: 150px;
+    }
+}
+@media screen and (max-width: 306px) {
+    
+    nav img {
+        position: relative;
+        right: 120px;
+        width: 100%;
+    }
+    .container .template .future #desktop {
+        display: none;
+    }
+    .container .template .future #mobile {
+        display: flex;
+        margin-left: 30px;
+        width: 220px;   
+    }
+    .container .template .future h1 {
+        margin-left: 30px;
+        font-size: 35px;
+        width: 200px;
+    }
+    .container .template .future p {
+        margin-top: 0px;
+        margin-left: 30px;
+        width: 200px;
+    }
+    .container .template .future button {
+        top: 110px;
+        left: 30px;
+    }
+    .container .banner .new  {
+        width: 200px;
+        height: 470px;
+    }
+    .container .banner .new hr {
+        width: 160px;
+    }
+    .container .banner .new{
+        top: 650px;
+        margin-bottom: 300px;
+        left: 30px;
+    }
+    .blog .news {
+        margin-left: 30px;
+    }
+    .blog .news img {
+        position: relative;
+        bottom: 65px;
+        height: 170px;
+    }
+    .blog .news h2 {
+        top: 90px;
+        font-size: 100%;
+    }
+    .blog .news h3 {
+        top: 100px;
+        font-size: 100%;
+        width: 100px;
+    }
+    .blog .news p {
+        font-size: 100%;
+        width: 100px;
+    }
+}
+@media screen and (max-width: 267px) {
+    
+    nav img {
+        position: relative;
+        right: 120px;
+    }
+    .container .template .future #desktop {
+        display: none;
+    }
+    .container .template .future #mobile {
+        display: flex;
+        margin-left: 30px;
+        width: 170px;
+    }
+    .container .template .future h1 {
+        margin-left: 30px;
+        font-size: 35px;
+        width: 150px;
+    }
+    .container .template .future p {
+        margin-top: 50px;
+        margin-left: 30px;
+        font-size: 100%;
+        width: 150px;
+    }
+    .container .template .future button {
+        top: 160px;
+        left: 30px;
+    }
+    .container .banner .new {
+        top: 740px;
+        margin-bottom: 350px;
+    }
+    .blog .news {
+        margin-left: 30px;
+    }
+    .blog .news img {
+        position: relative;
+        bottom: 100px;
+        height: 210px;
+    }
+    .blog .news h2 {
+        top: 90px;
+        font-size: 100%;
+    }
+    .blog .news h3 {
+        top: 100px;
+        font-size: 100%;
+        width: 70px;
+    }
+    .blog .news p {
+        font-size: 100%;
+        width: 70px;
+    }
+   
+}
+@media screen and (max-width: 252px) {
+    
+    nav img {
+        position: relative;
+        right: 120px;
+        width: 30px;
+    }
+    nav ul #burger {
+        width: 30px;
+    }
+    .container .template .future #desktop {
+        display: none;
+    }
+    .container .template .future #mobile {
+        display: flex;
+        margin-left: 30px;
+        width: 150px;
+    }
+    .container .template .future h1 {
+        margin-left: 30px;
+        font-size: 100%;
+        width: 150px;
+    }
+    .container .template .future p {
+        top: 200px;
+        margin-top: 0px;
+        margin-left: 30px;
+        font-size: 100%;
+        width: 150px;
+    }
+    .container .template .future button {
+        top: 140px;
+        left: 30px;
+    }
+    .container .banner .new {
+        top: 520px;
+        margin-bottom: 130px;
+        width: 140px;
+        height: 540px;
+    }
+    .container .banner .new hr {
+        width: 100px;
+    }
+    .blog .news {
+        margin-left: 5px;
+        margin-bottom: 0px
+    }
+    .blog .news img {
+        position: relative;
+        bottom: 100px;
+        height: 210px;
+    }
+    .blog .news h2 {
+        top: 90px;
+        font-size: 100%;
+    }
+    .blog .news h3 {
+        top: 100px;
+        font-size: 100%;
+        width: 70px;
+    }
+    .blog .news p {
+        font-size: 100%;
+        width: 0px;
+    }
+   
+}
+@media screen and (max-width: 241px) {
+    
+    nav img {
+        position: relative;
+        right: 120px;
+        width: 30px;
+    }
+    nav ul #burger {
+        width: 30px;
+    }
+    .container .template .future #desktop {
+        display: none;
+    }
+    .container .template .future #mobile {
+        display: flex;
+        margin-left: 0px;
+        width: 150px;
+    }
+    .container .template .future h1 {
+        margin-left: 30px;
+        font-size: 100%;
+        width: 150px;
+    }
+    .container .template .future p {
+        top: 200px;
+        margin-top: 0px;
+        margin-left: 0px;
+        font-size: 100%;
+        width: 150px;
+    }
+    .container .template .future button {
+        top: 140px;
+        left: 0px;
+    }
+    .container .banner .new {
+        top: 520px;
+        margin-bottom: 130px;
+        width: 140px;
+        height: 540px;
+        left: 0px;
+    }
+    .container .banner .new hr {
+        width: 100px;
+    }
+    .blog .news {
+        margin-left: 0px;
+        margin-bottom: 0px
+    }
+    .blog .news img {
+        position: relative;
+        bottom: 100px;
+        height: 210px;
+    }
+    .blog .news h2 {
+        top: 90px;
+        font-size: 100%;
+    }
+    .blog .news h3 {
+        top: 100px;
+        font-size: 100%;
+        width: 0px;
+    }
+    .blog .news p {
+        font-size: 100%;
+        width: 0px;
+    }
+   
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">  
+  <title>Frontend Mentor | News homepage</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+      <nav>
+        <img src="./assets/images/logo.svg" alt="">
+        <ul>
+          <li id="flex"><a href="">Home</a></li>
+          <li id="flex"><a href="">New</a></li>
+          <li id="flex"><a href="">Popular</a></li>
+          <li id="flex"><a href="">Trending</a></li>
+          <li id="flex"><a href="">Categories</a></li>
+          <li id="budgers"><a><img id="burger" src="./assets/images/icon-menu.svg" onclick="Toggle()"></a></li>
+        </ul>
+      </nav>
+
+      <div class="blocks" id="drop-down" style="display:  none;">
+        <div class="drop">
+          <img src="./assets/images/icon-menu-close.svg" onclick="Close()">
+          <nav>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li id=""><a href="">New</a></li>
+              <li id=""><a href="">Popular</a></li>
+              <li id=""><a href="">Trending</a></li>
+              <li id=""><a href="">Categories</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="template">
+            <div class="future">
+              <img id="desktop" src="./assets/images/image-web-3-desktop.jpg" alt="">
+              <img id="mobile" src="./assets/images/image-web-3-mobile.jpg" alt="">
+              <h1>The Bright Future of Web 3.0?</h1>
+              <p>We dive into the next evoluttion of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+              <button type="button">READ MORE</button>
+            </div>
+        </div>
+        <div class="banner">
+          <div class="new">
+            <h2>New</h2>
+            <div class="hydrogen">
+              <h3>Hydrogen VS Electric Cars</h3>
+              <p>Will hydrogen-fueled cars ever catch up to Ev's?</p>
+            </div>
+            <hr>
+            <div class="hydrogen">
+              <h3>The Downsides of Al Artistry</h3>
+              <p>What are the possible adverse effects of on-demang All image generation?</p>
+            </div>
+            <hr>
+            <div class="hydrogen">
+              <h3>ls Vc Funding Drying Up?</h3>
+              <p>Private Funding by Vc firms is down 50% YOY. We take a look at what that means.</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="blog">
+        <div class="news">
+          <h2>01</h2>
+          <h3>Reviving Retro Pcs</h3>
+          <p>What happens when old Pcs are given modern upgrades?</p>
+          <img src="./assets/images/image-retro-pcs.jpg" alt="">
+        </div>
+        <div class="news">
+          <h2>02</h2>
+          <h3>Top 10 Laptops of 2022</h3>
+          <p>Our best picks for various needs and budgets.</p>
+          <img src="./assets/images/image-top-laptops.jpg" alt="">
+        </div>
+        <div class="news">
+          <h2>03</h2>
+          <h3>The Growth of Gaming</h3>
+          <p>How the power of pandemic has sparked fresh opportunities.</p>
+          <img src="./assets/images/image-gaming-growth.jpg" alt="">
+        </div>
+      </div>
+    </header>
+  <!-- <div class="attribution">
+   <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+   <a href="#">BlackD</a>.
+  </div> --> 
+  <script src="main.js"></script>
+</body>
+</html>
