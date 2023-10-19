@@ -12,11 +12,11 @@
       <nav>
         <img src="./assets/images/logo.svg" alt="">
         <ul>
-          <li id="flex"><a href="">Home</a></li>
-          <li id="flex"><a href="">New</a></li>
+          <li id="flex"><a href="#Home">Home</a></li>
+          <li id="flex"><a href="#New">New</a></li>
           <li id="flex"><a href="">Popular</a></li>
-          <li id="flex"><a href="">Trending</a></li>
-          <li id="flex"><a href="">Categories</a></li>
+          <li id="flex"><a href="#All">Trending</a></li>
+          <li id="flex"><a href="#All">Categories</a></li>
           <li id="budgers"><a><img id="burger" src="./assets/images/icon-menu.svg" onclick="Toggle()"></a></li>
         </ul>
       </nav>
@@ -27,16 +27,16 @@
           <nav>
             <ul>
               <li><a href="">Home</a></li>
-              <li id=""><a href="">New</a></li>
-              <li id=""><a href="">Popular</a></li>
-              <li id=""><a href="">Trending</a></li>
-              <li id=""><a href="">Categories</a></li>
+              <li id=""><a href="#Home">New</a></li>
+              <li id=""><a href="#New">Popular</a></li>
+              <li id=""><a href="#All">Trending</a></li>
+              <li id=""><a href="#All">Categories</a></li>
             </ul>
           </nav>
         </div>
       </div>
 
-      <div class="container">
+      <div class="container" id="Home">
         <div class="template">
             <div class="future">
               <img id="desktop" src="./assets/images/image-web-3-desktop.jpg" alt="">
@@ -46,7 +46,7 @@
               <button type="button">READ MORE</button>
             </div>
         </div>
-        <div class="banner">
+        <div class="banner" id="#New">
           <div class="new">
             <h2>New</h2>
             <div class="hydrogen">
@@ -66,7 +66,7 @@
           </div>
       </div>
 
-      <div class="blog">
+      <div class="blog" id="All">
         <div class="news">
           <h2>01</h2>
           <h3>Reviving Retro Pcs</h3>
